@@ -1,0 +1,63 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/tarun/wheelchair-camera-lidar/workspace/devel/include/**",
+        "/home/tarun/catkin_ws/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/tarun/wheelchair-camera-lidar/workspace/src/dependencies/robot_navigation/robot_nav_tools/color_util/include/**",
+        "/home/tarun/wheelchair-camera-lidar/workspace/src/dependencies/robot_navigation/costmap_queue/include/**",
+        "/home/tarun/wheelchair-camera-lidar/workspace/src/depthimage_to_laserscan/include/**",
+        "/home/tarun/wheelchair-camera-lidar/workspace/src/dependencies/robot_navigation/dlux_global_planner/include/**",
+        "/home/tarun/wheelchair-camera-lidar/workspace/src/dependencies/robot_navigation/dlux_plugins/include/**",
+        "/home/tarun/wheelchair-camera-lidar/workspace/src/dependencies/robot_navigation/dwb_critics/include/**",
+        "/home/tarun/wheelchair-camera-lidar/workspace/src/dependencies/robot_navigation/dwb_local_planner/include/**",
+        "/home/tarun/wheelchair-camera-lidar/workspace/src/dependencies/robot_navigation/dwb_plugins/include/**",
+        "/home/tarun/wheelchair-camera-lidar/workspace/src/dependencies/robot_navigation/global_planner_tests/include/**",
+        "/home/tarun/wheelchair-camera-lidar/workspace/src/dependencies/hls_lfcd_lds_driver/include/**",
+        "/home/tarun/wheelchair-camera-lidar/workspace/src/kangaroo_x2_driver/include/**",
+        "/home/tarun/wheelchair-camera-lidar/workspace/src/dependencies/laser_filters/include/**",
+        "/home/tarun/wheelchair-camera-lidar/workspace/src/dependencies/robot_navigation/locomotor/include/**",
+        "/home/tarun/wheelchair-camera-lidar/workspace/src/dependencies/robot_navigation/locomove_base/include/**",
+        "/home/tarun/wheelchair-camera-lidar/workspace/src/dependencies/robot_navigation/nav_2d_utils/include/**",
+        "/home/tarun/wheelchair-camera-lidar/workspace/src/dependencies/robot_navigation/nav_core2/include/**",
+        "/home/tarun/wheelchair-camera-lidar/workspace/src/dependencies/robot_navigation/nav_core_adapter/include/**",
+        "/home/tarun/wheelchair-camera-lidar/workspace/src/dependencies/robot_navigation/nav_grid/include/**",
+        "/home/tarun/wheelchair-camera-lidar/workspace/src/dependencies/robot_navigation/nav_grid_iterators/include/**",
+        "/home/tarun/wheelchair-camera-lidar/workspace/src/dependencies/robot_navigation/nav_grid_pub_sub/include/**",
+        "/home/tarun/wheelchair-camera-lidar/workspace/src/dependencies/robot_navigation/nav_grid_server/include/**",
+        "/home/tarun/wheelchair-camera-lidar/workspace/src/dependencies/pointcloud_to_laserscan/include/**",
+        "/home/tarun/wheelchair-camera-lidar/workspace/src/dependencies/realsense-ros/realsense2_camera/include/**",
+        "/home/tarun/wheelchair-camera-lidar/workspace/src/dependencies/realsense_gazebo_plugin/include/**",
+        "/home/tarun/wheelchair-camera-lidar/workspace/src/dependencies/robot_localization/include/**",
+        "/home/tarun/wheelchair-camera-lidar/workspace/src/dependencies/robot_navigation/robot_nav_tools/robot_nav_rviz_plugins/include/**",
+        "/home/tarun/wheelchair-camera-lidar/workspace/src/dependencies/robot_navigation/robot_nav_tools/robot_nav_viz_demos/include/**",
+        "/home/tarun/wheelchair-camera-lidar/workspace/src/dependencies/robot_pose_ekf/include/**",
+        "/home/tarun/catkin_ws/src/rosserial/rosserial_server/include/**",
+        "/home/tarun/catkin_ws/src/rosserial/rosserial_test/include/**",
+        "/home/tarun/catkin_ws/src/rtabmap_ros/rtabmap_conversions/include/**",
+        "/home/tarun/catkin_ws/src/rtabmap_ros/rtabmap_costmap_plugins/include/**",
+        "/home/tarun/catkin_ws/src/rtabmap_ros/rtabmap_odom/include/**",
+        "/home/tarun/catkin_ws/src/rtabmap_ros/rtabmap_rviz_plugins/include/**",
+        "/home/tarun/catkin_ws/src/rtabmap_ros/rtabmap_slam/include/**",
+        "/home/tarun/catkin_ws/src/rtabmap_ros/rtabmap_sync/include/**",
+        "/home/tarun/catkin_ws/src/rtabmap_ros/rtabmap_util/include/**",
+        "/home/tarun/catkin_ws/src/rtabmap_ros/rtabmap_viz/include/**",
+        "/home/tarun/wheelchair-camera-lidar/workspace/src/wheelchair_nav_cameras/include/**",
+        "/home/tarun/wheelchair-camera-lidar/workspace/src/wheelchair_navigation/include/**",
+        "/home/tarun/catkin_ws/src/zed-ros-wrapper/zed-ros-interfaces/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
