@@ -230,18 +230,19 @@
         <origin xyz="-0.08 -0.1 1.30" rpy="0 0.14 0.067"/>
       </xacro:sensor_d435> -->
   
-  <xacro:include filename="$(find zed_wrapper)/urdf/zed_macro.urdf.xacro" />
+  <!-- <xacro:include filename="$(find zed_wrapper)/urdf/zed_macro.urdf.xacro" />
   <xacro:zed_camera name="zed2i" parent="base_link">
     <origin 
       xyz="-0.08 0 1.40" 
-      rpy="0 0.14 0.067"/>
-  </xacro:zed_camera>
-    <!-- <joint name="base_link_to_camera" type="fixed">
+      rpy="0 0.22 0"/>
+  </xacro:zed_camera> -->
+
+    <joint name="base_link_to_camera" type="fixed">
 	    <axis xyz="0 0 0" />
       <origin xyz="0.53 -0.24 0.30" rpy="0 0.035 0.040"/>
       <parent link="base_link" />
-     <child link="camera_base" />
-    </joint> -->
+      <child link="camera_base" />
+    </joint>
 
       <!--xacro:sensor_d455 parent="camera_base_rod" name="camera1">
         <origin xyz="0.60 -0.34 -0.50" rpy="0 -0.01 0"/>
