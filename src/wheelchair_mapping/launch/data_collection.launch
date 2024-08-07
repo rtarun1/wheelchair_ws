@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<launch>
+
+<!-- Robot state publisher -->
+<include file="$(find wheelchair_mapping)/launch/robot_state_publish.launch"/>
+
+<!-- Realsense Camera launch-->
+<include file="$(find realsense2_camera)/launch/rs_camera.launch"/>
+
+<!-- LiDAR launch -->
+<include file="$(find rplidar_ros)/launch/rplidar_a3.launch" />
+
+<!-- Kangaroo driver launch for /odom and control -->
+<include file="$(find kangaroo_driver)/launch/kangaroo_driver.launch"/> 
+
+<!-- LiDAR filter-->
+<include file="$(find wheelchair_nav_cameras)/laser_filter launch/angle_range_filter.launch" />
+
+<!-- Joystick control -->
+<include file="$(find teleop_twist_joy)/launch/teleop.launch"/>
+
+<!-- <node name="rviz" pkg="rviz" type="rviz" args="-d $(find realsense2_camera)/rviz/pointcloud.rviz" required="true" /> -->
+</launch>

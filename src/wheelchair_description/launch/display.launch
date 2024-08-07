@@ -4,7 +4,7 @@
   <!-- <arg name="model" default="$(find wheelchair_description)/urdf/test_d435_camera.urdf.xacro"/> -->
   <!-- <arg name="gui" default="false" /> -->
 
-  <arg name="model" default="$(find wheelchair_description)/urdf/wheelchair_real_new_azure.xacro"/>
+  <arg name="model" default="$(find wheelchair_description)/urdf/wheelchair_rs.xacro"/>
   <!-- <arg name="gui" default="true" /> -->
 
   <arg name="rvizconfig" default="$(find wheelchair_description)/rviz/urdf.rviz" />
