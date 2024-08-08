@@ -20,5 +20,9 @@
 <!-- Joystick control -->
 <include file="$(find teleop_twist_joy)/launch/teleop.launch"/>
 
+ <!-- rosbag record buffsize=0 /tf /tf_static /scan_filtered /odom /wheelchair_diff/cmd_vel /imu  
+/scan_raw /camera/color/image_raw /camera/aligned_depth_to_color/image_raw /camera/color/camera_info 
+/camera/color/metadata /camera/depth/camera_info /camera/aligned_depth_to_color/camera_info  -->
+
 <!-- <node name="rviz" pkg="rviz" type="rviz" args="-d $(find realsense2_camera)/rviz/pointcloud.rviz" required="true" /> -->
 </launch>
