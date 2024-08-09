@@ -7,7 +7,7 @@ local_costmap:
   robot_base_frame: base_link
 
   #Set the update and publish frequency of the costmap
-  update_frequency: 2.0
+  update_frequency: 5.0
   publish_frequency: 2.0
 
   #We'll configure this costmap to be a rolling window... meaning it is always centered at the robot
@@ -20,19 +20,19 @@ local_costmap:
   inflation_layer:
       enabled:              true
       cost_scaling_factor:  10.0 # exp(-1.0 * cost_scaling_factor * (distance_from_obstacle – inscribed_radius)) * (costmap_2d::INSCRIBED_INFLATED_OBSTACLE - 1) 
-      inflation_radius:     0.6 # max. distance from an obstacle at which costs are incurred for planning paths.
+      inflation_radius:     0.178 # max. distance from an obstacle at which costs are incurred for planning paths.
 
-#  social_navigation_layer:
-#      enabled:              true
-#      cutoff:               10.0
-#      amplitude:            77.0
-#      covarience:           0.25
-#      factor:               5.0
-#      keep_time:            0.75
+# #  social_navigation_layer:
+# #      enabled:              true
+# #      cutoff:               10.0
+# #      amplitude:            77.0
+# #      covarience:           0.25
+# #      factor:               5.0
+# #      keep_time:            0.75
 
-  plugins:
-#     - {name: social_navigation_layers, type: "social_navigation_layers::PassingLayer"}
-#     - {name: costmap_prohibition_layer, type: "costmap_prohibition_layer_namespace::CostmapProhibitionLayer"}
-     - {name: obstacle_layer, type: "costmap_2d::ObstacleLayer"}
-#    - {name: range_sensor_layer,   type: "range_sensor_layer::RangeSensorLayer"}
-     - {name: inflation_layer, type: "costmap_2d::InflationLayer"}
+#   plugins:
+# #     - {name: social_navigation_layers, type: "social_navigation_layers::PassingLayer"}
+# #     - {name: costmap_prohibition_layer, type: "costmap_prohibition_layer_namespace::CostmapProhibitionLayer"}
+#      - {name: obstacle_layer, type: "costmap_2d::ObstacleLayer"}
+# #    - {name: range_sensor_layer,   type: "range_sensor_layer::RangeSensorLayer"}
+#      - {name: inflation_layer, type: "costmap_2d::InflationLayer"}

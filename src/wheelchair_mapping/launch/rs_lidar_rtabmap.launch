@@ -1,7 +1,7 @@
 <launch>
   <group ns="rtabmap">
  <!-- Localization-only mode -->
-     <arg name="localization"      default="true"/>
+     <arg name="localization"      default="false"/>
      <arg     if="$(arg localization)" name="rtabmap_args"  default=""/>
      <arg unless="$(arg localization)" name="rtabmap_args"  default=""/>
 
@@ -19,7 +19,7 @@
       <param name="queue_size" type="int" value="10"/>
 
       <remap from="grid_map" to="map"/>
-      <!-- <param name="RGBD/NeighborLinkRefining" type="zed/left/camera_infostring" value="true"/> -->
+      <param name="RGBD/NeighborLinkRefining" type="string" value="true"/>
       <param name="RGBD/ProximityBySpace"     type="string" value="true"/>
       <param name="RGBD/AngularUpdate"        type="string" value="0.01"/>
       <param name="RGBD/LinearUpdate"         type="string" value="0.01"/>

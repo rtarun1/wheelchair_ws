@@ -1,0 +1,35 @@
+<launch>
+
+    <!-- Start RTAB-map launch file, localization mode  -->
+    <!-- <include file="$(find my_navigation)/launch/rtab_map.launch" /> -->
+
+    <remap from="map" to="/rtabmap/map" />
+    <!-- <arg name="open_rviz" default="true" /> -->
+    <arg name="cmd_vel_topic" default="/wheelchair_diff/cmd_vel" />
+    <arg name="odom_topic" default="/odom" />
+
+    <remap from="move_base/current_goal" to="move_base_simple/goal"/>
+
+    <!-- Launch the move_base node with the specified config files -->
+    <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+
+       <!-- <param name="base_global_planner" value="global_planner/GlobalPlanner" /> -->
+        <param name="base_local_planner" value="dwa_local_planner/DWAPlannerROS" />
+        <rosparam file="$(find wheelchair_navigation)/param/new_costmap_common_params.yaml"       command="load" ns="global_costmap" />
+        <rosparam file="$(find wheelchair_navigation)/param/new_costmap_common_params.yaml"       command="load" ns="local_costmap" />
+        <rosparam file="$(find wheelchair_navigation)/param/new_local_costmap_params.yaml"        command="load" />
+        <rosparam file="$(find wheelchair_navigation)/param/new_global_costmap_params.yaml"       command="load" />
+        <rosparam file="$(find wheelchair_navigation)/param/base_local_planner_params.yaml"    command="load" />
+        <!-- <rosparam file="$(find wheelchair_navigation)/param/move_base_params.yaml"            command="load"/> -->
+        <!-- <rosparam file="$(find wheelchair_navigation)/param/global_planner_params.yaml"       command="load"/> -->
+        <remap from="cmd_vel" to="$(arg cmd_vel_topic)"/>
+        <remap from="odom" to="$(arg odom_topic)" />
+ 
+    </node>
+    <!-- <group if="$(arg open_rviz)">
+    <node args="-d $(find wheelchair_nav_cameras)/rviz/wheelchair_navigation.rviz" name="rviz" pkg="rviz" required="true" type="rviz" />
+  </group> -->
+
+
+    
+</launch>
