@@ -16,7 +16,7 @@
       <remap from="odom" to="/odom"/>  
       <!-- <remap from="odom" to="/odometry/filtered"/>    -->
       <remap from="scan" to="/scan_raw"/>
-      <param name="queue_size" type="int" value="1"/>
+      <param name="queue_size" type="int" value="10"/>
 
       <remap from="grid_map" to="map"/>
       <param name="RGBD/NeighborLinkRefining" type="string" value="true"/>  <!-- Do odometry correction with consecutive laser scans-->
